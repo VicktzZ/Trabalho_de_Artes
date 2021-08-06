@@ -63,6 +63,7 @@ body{
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    font-size: 0.95rem;
   }
   
 .navbar li{ 
@@ -77,16 +78,18 @@ body{
     text-decoration: none;
   }
 
-.navbar li a:hover:not(.active){
+.navbar li a:hover:not(.actived){
     background-color: #111;
+    transition: .3s;
   }
   
-.active{
+.actived{
     background-color: #04AA6D;
   }
 
-.active:hover{
+.actived:hover{
     background-color: #026e46;
+    transition: .3s;
 }
 
 h1, h2, h3, h4, h5, h6{
