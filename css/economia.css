@@ -1,0 +1,7 @@
+@import url(global.css);
+
+header::before{
+  background-image: url(/img/bg/syed-ahmed-451DMKNITAM-unsplash.jpg);
+  background-blend-mode: screen;
+  background-color: #20c99750;
+}

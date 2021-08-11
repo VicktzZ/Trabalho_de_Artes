@@ -1,9 +1,8 @@
+@import url(global.css);
 
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.navbar{
+    background-color: #333;
+    position: unset;
 }
 
 body{
@@ -53,52 +52,6 @@ body{
 
 .curved.upper svg path{
     animation: backgroundChange 10s ease-in-out infinite;
-}
-
-/* NAVBAR */
-
-.navbar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    font-size: 1rem;
-  }
-  
-.navbar li{ 
-    float: left;
-  }
-  
-.navbar li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-.navbar li a:hover:not(.actived){
-    background-color: #111;
-    transition: .3s;
-  }
-  
-.actived{
-    background-color: #04AA6D;
-  }
-
-.actived:hover{
-    background-color: #026e46;
-    transition: .3s;
-}
-
-h1, h2, h3, h4, h5, h6{
-    margin-bottom: 0;
-    font-weight: 900;
-}
-
-h3{
-    font-size: 18px;
 }
 
 /* KEYFRAMES */

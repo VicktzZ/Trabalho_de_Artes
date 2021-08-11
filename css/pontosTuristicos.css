@@ -1,0 +1,7 @@
+@import url(global.css);
+
+header::before{
+  background-image: url(/img/bg/tim-geenens-p5XgTYTFEaU-unsplash.jpg);
+  background-blend-mode: screen;
+  background-color: #d6338460;
+}

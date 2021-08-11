@@ -1,0 +1,7 @@
+@import url(global.css);
+
+header::before{
+  background-image: url(/img/bg/simon-zhu-D1F-p8WoI-M-unsplash.jpg);
+  background-blend-mode: screen;
+  background-color: #48258a80;
+} 

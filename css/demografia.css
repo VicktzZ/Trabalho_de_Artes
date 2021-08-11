@@ -1,0 +1,7 @@
+@import url(global.css);
+
+header::before{
+  background-image: url(/img/bg/james-thomas-UG-m_ngzMFM-unsplash.jpg);
+  background-blend-mode: screen;
+  background-color: #fd7e1470;
+}

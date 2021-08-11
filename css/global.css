@@ -1,4 +1,4 @@
-/** FONT  */
+/** FONTS  */
 @font-face {
   font-family: 'Luna';
   src: url(/font/Luna.ttf);
@@ -6,12 +6,68 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Road Stick';
+  src: url(/font/Road\ Stick_PersonalUseOnly.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Priska';
+  src: url(/font/Priska.otf);
+  font-style: normal;
+  font-weight: 900;
+}
+
+
 /* CSS PATTERN */
 * {
   padding: 0;
   margin: 0;
   text-decoration: none;
   overflow: hidden;
+}
+
+/** NAVBAR */
+
+.navbar {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(51, 51, 51, 0);
+  font-size: 0.995rem;
+  position: absolute;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  z-index: 2;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover:not(.actived) {
+  background-color: #111;
+  transition: .3s;
+}
+
+.actived {
+  background-color: #04aa6d00;
+}
+
+.actived:hover {
+  background-color: #026e46;
+  transition: .3s;
 }
 
 /**PARALLAX  */
@@ -32,17 +88,23 @@ body{
 }
 
 header{
-  font-family: luna;
-  text-shadow: 2px 2px 2px black;
+  font-family: 'Luna';
   min-height: 100vh;
-  padding: 30vw 0 5vw;
+  padding: 40vh 0 5vw;
   position: relative;
   transform-style: inherit;
-  width: 100vw;
+  width: 100%;
+  color: #000;
+  text-shadow: 2px 4px 1px gray;
 }
 
 header h1{
   margin-top: -100px;
+  font-size: 4rem;
+}
+
+header p{
+  font-size: 2rem;
 }
 
 header, header::before{
@@ -57,13 +119,12 @@ header::before{
   right: 0;
   top: 0;
   display: block;
-  background-image: url(/img/bg/john-lee-oMneOBYhJxY-unsplash.jpg);
   background-size: cover;
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
   min-height: 100vh;
-  animation: backgroundAnimation 40s ease-in-out infinite;
+  animation: backgroundAnimation 35s ease-in-out infinite;
 }
 
 header *{
@@ -76,15 +137,15 @@ header *{
 
 @keyframes backgroundAnimation{
   0%{
-    transform: translateZ(-1px) scale(2.5);
+    transform: translateZ(-1px) scale(2.65);
   }
 
   50%{
-    transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2.1);
   }
 
   100%{
-    transform: translateZ(-1px) scale(2.5);
+    transform: translateZ(-1px) scale(2.65);
   }
 }
 
@@ -129,45 +190,7 @@ hr{
   left: 75vw;
 }
 
-/** NAVBAR */
-
-.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(51, 51, 51, 0);
-  font-size: 0.995rem;
-  position: absolute;
-  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000;
-  z-index: 2;
-}
-
-.navbar li {
-  float: left;
-}
-
-.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar li a:hover:not(.actived) {
-  background-color: #111;
-  transition: .3s;
-}
-
-.actived {
-  background-color: #04aa6d00;
-}
-
-.actived:hover {
-  background-color: #026e46;
-  transition: .3s;
-}
+/** BS5 */
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -197,13 +220,13 @@ hr{
 
 /* Carousel background */
 
-img {
+img:not(#logo) {
   filter: grayscale(75%);
   transition: 1.5s;
   cursor: pointer;
 }
 
-img:hover {
+img:hover:not(#logo) {
   filter: unset;
   transform: scale(1.2);
 }

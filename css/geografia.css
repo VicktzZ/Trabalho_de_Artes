@@ -1,0 +1,7 @@
+@import url(global.css);
+
+header::before{
+  background-image: url(/img/bg/derek-sutton-uouH1bGxeeU-unsplash.jpg);
+  background-blend-mode: screen;
+  background-color: #28a74550;
+}

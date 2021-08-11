@@ -1,0 +1,7 @@
+@import url(global.css);
+
+header::before{
+  background-image: url(/img/bg/bruno-soares-Pa8ofq11OGg-unsplash.jpg);
+  background-blend-mode: screen;
+  background-color: #dc354560;
+}

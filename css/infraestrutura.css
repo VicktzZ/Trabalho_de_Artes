@@ -1,0 +1,7 @@
+@import url(global.css);
+
+header::before{
+    background-image: url(/img/bg/dawson-lovell-W_MUqtuHwyY-unsplash.jpg);
+    background-blend-mode: screen;
+    background-color: #ffc10750;
+}

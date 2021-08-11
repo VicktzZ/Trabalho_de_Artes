@@ -1,0 +1,7 @@
+@import url(global.css);
+
+header::before{
+    background-image: url(/img/bg/john-lee-oMneOBYhJxY-unsplash.jpg);
+    background-blend-mode: screen;
+    background-color: #0d6efd50;
+}
