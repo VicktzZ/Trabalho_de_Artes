@@ -56,7 +56,7 @@
   text-decoration: none;
 }
 
-.navbar li a:hover:not(.actived) {
+.navbar li a:hover{
   background-color: #111;
   transition: .3s;
 }
@@ -70,7 +70,7 @@
   transition: .3s;
 }
 
-/**PARALLAX  */
+/** PARALLAX  */
 
 html{
   height: 100%;
@@ -190,6 +190,25 @@ hr{
   left: 75vw;
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, .25);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, .375);
+}
+
 /** BS5 */
 
 .bd-placeholder-img {
@@ -213,30 +232,37 @@ hr{
 /* Carousel base class */
 
 .carousel {
-  width: 80vw;
+  width: 72.5vw;
   margin: auto;
   margin-bottom: 4rem;
+}
+
+@media (min-width: 1249px) {
+  .carousel {
+    width: 75vw;
+    height: 40rem;
+  }
 }
 
 /* Carousel background */
 
 img:not(#logo) {
-  filter: grayscale(75%);
+  filter: grayscale(60%);
   transition: 1.5s;
   cursor: pointer;
 }
 
 img:hover:not(#logo) {
   filter: unset;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .shadow-bg {
-  background: linear-gradient(90deg, rgba(0, 0, 0, .8)25%, rgba(0, 0, 0, 0));
+  background: linear-gradient(90deg, rgba(0, 0, 0, .6)25%, rgba(0, 0, 0, 0));
 }
 
 .shadow-bg2 {
-  background: linear-gradient(270deg, rgba(0, 0, 0, .8)25%, rgba(0, 0, 0, 0));
+  background: linear-gradient(270deg, rgba(0, 0, 0, .6)25%, rgba(0, 0, 0, 0));
 }
 
 /* Since positioning the image, we need to help out the caption */
