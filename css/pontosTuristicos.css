@@ -5,3 +5,7 @@ header::before{
   background-blend-mode: screen;
   background-color: #d6338460;
 }
+
+::-webkit-scrollbar-thumb{
+  background-color: #d6338460;
+}

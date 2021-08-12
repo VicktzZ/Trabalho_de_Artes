@@ -54,6 +54,10 @@ body{
     animation: backgroundChange 10s ease-in-out infinite;
 }
 
+::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+
 /* KEYFRAMES */
 
 @keyframes backgroundChange {
