@@ -1,5 +1,10 @@
 /** FONTS  */
 @font-face {
+  font-family: 'Quite Magical';
+  src: url(/font/Quite\ Magical\ -\ TTF.ttf);
+}
+
+@font-face {
   font-family: 'Luna';
   src: url(/font/Luna.ttf);
   font-style: normal;
@@ -88,9 +93,11 @@ body{
 }
 
 header{
-  font-family: 'Luna';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   min-height: 100vh;
-  padding: 40vh 0 5vw;
   position: relative;
   transform-style: inherit;
   width: 100%;
@@ -98,13 +105,24 @@ header{
   text-shadow: 2px 4px 1px gray;
 }
 
+.header-wrapper{
+  font-family: 'Quite Magical';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main{
+  padding: 2rem;
+}
+
 header h1{
-  margin-top: -100px;
-  font-size: 4rem;
+  font-size: 8rem;
 }
 
 header p{
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 header, header::before{
@@ -125,14 +143,6 @@ header::before{
   z-index: -1;
   min-height: 100vh;
   animation: backgroundAnimation 35s ease-in-out infinite;
-}
-
-header *{
-  font-weight: normal;
-  letter-spacing: 0.2em;
-  margin: 0;
-  padding: 1em 0;
-  text-align: center;
 }
 
 @keyframes backgroundAnimation{
@@ -171,7 +181,7 @@ header *{
 }
 
 .texto{
-  width: 96%;
+  width: 100%;
   padding: 2rem 4rem 4rem 2rem;
   margin: auto;
   text-align: left;
@@ -209,6 +219,12 @@ hr{
   box-shadow: inset 0 0 20px rgba(0, 0, 0, .375);
 }
 
+@media (max-width: 768px) {
+  ::-webkit-scrollbar{
+    display: none;
+  }
+}
+
 /** BS5 */
 
 .bd-placeholder-img {
@@ -237,12 +253,6 @@ hr{
   margin-bottom: 4rem;
 }
 
-@media (min-width: 1249px) {
-  .carousel {
-    width: 75vw;
-    height: 40rem;
-  }
-}
 
 /* Carousel background */
 
@@ -306,5 +316,20 @@ img:hover:not(#logo) {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+}
+
+@media (min-width: 1249px) {
+  .carousel{
+    width: 80vw;
+    height: 38rem;
+  }
+
+  img:not(#logo){
+    height: 38rem;
+  }
+
+  .carousel-item, .carousel-inner{
+    height: 38rem;
   }
 }
