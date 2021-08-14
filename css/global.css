@@ -37,6 +37,7 @@
 /** NAVBAR */
 
 .navbar {
+  display: flex;
   width: 100%;
   list-style-type: none;
   margin: 0;
@@ -63,15 +64,6 @@
 
 .navbar li a:hover{
   background-color: #111;
-  transition: .3s;
-}
-
-.actived {
-  background-color: #04aa6d00;
-}
-
-.actived:hover {
-  background-color: #026e46;
   transition: .3s;
 }
 
@@ -319,17 +311,46 @@ img:hover:not(#logo) {
   }
 }
 
-@media (min-width: 1249px) {
+@media (min-width: 1700px) {
+
+  .navbar{
+  font-size: 1.6rem;
+  }
+  
+  .carousel h1{
+  font-size: 3.3rem;
+  }
+  
+  .topico{
+  font-size: 2.9rem;
+  }
+  
+  .texto{
+  font-size: 1.9rem;
+  }
+  
+  .carousel p{
+  font-size: 2rem;
+  }
+
+  header h1{
+  font-size: 16rem;
+  }
+  
+  header p{
+  font-size: 8rem;
+  }
+
   .carousel{
     width: 80vw;
-    height: 38rem;
+    height: 50rem;
   }
 
   img:not(#logo){
-    height: 38rem;
+    height: 50rem;
   }
 
   .carousel-item, .carousel-inner{
-    height: 38rem;
+    height: 50rem;
   }
 }
