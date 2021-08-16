@@ -311,14 +311,14 @@ img:hover:not(#logo) {
   }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1400px) {
 
   .navbar{
   font-size: 1.6rem;
   }
   
   .carousel h1{
-  font-size: 3.3rem;
+  font-size: 3rem;
   }
   
   .topico{
@@ -334,11 +334,11 @@ img:hover:not(#logo) {
   }
 
   header h1{
-  font-size: 16rem;
+  font-size: 15rem;
   }
   
   header p{
-  font-size: 8rem;
+  font-size: 7.5rem;
   }
 
   .carousel{

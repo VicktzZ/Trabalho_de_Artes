@@ -1,6 +1,30 @@
-::-webkit-scrollbar-thumb{
-  background-color: #333;
+/** Scrollbar  */
+
+::-webkit-scrollbar{
+  width: 10px;
 }
+
+::-webkit-scrollbar-track{
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, .25);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background-color: #444;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, .375);
+}
+
+@media (max-width: 768px) {
+  ::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+/** BS5  */
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -23,6 +47,13 @@
   
 h5{
     margin: 1rem;
+}
+
+.tab-pane{
+  margin: 1.3rem 1.3rem 1.3rem 0;
+  text-decoration: underline;
+  color: #007bff;
+  cursor: pointer;
 }
 
   .feather {
