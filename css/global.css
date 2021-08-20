@@ -311,7 +311,7 @@ img:hover:not(#logo) {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1700px) {
 
   .navbar{
   font-size: 1.6rem;
